@@ -57,5 +57,11 @@ public class TestMaximumTest {
         String result = testMaximum.testMaxString("Zebra", "zebra", "Tiger");
         Assert.assertEquals("zebra", result);
     }
+
+    @Test
+    public void givenMaxStringAt_ThirdPosition_shouldReturnSameString(){
+        String result = testMaximum.testMaxString("lion", "tiger", "zebra");
+        Assert.assertEquals("zebra", result);
+    }
 }
 
