@@ -1,10 +1,21 @@
 package com.bridgelabz;
 
-public class TestMaximum {
+public class TestMaximum <E extends Comparable<E>>{
 
-    public <E extends Comparable> E testMaximum(E input1, E input2, E input3) {
+    E input1;
+    E input2;
+    E input3;
 
-        if(!(input1.compareTo(input2) <= 0) && input1.compareTo(input3) > 0)
+    public TestMaximum(E input1, E input2, E input3) {
+
+        this.input1 = input1;
+        this.input2 = input2;
+        this.input3 = input3;
+    }
+
+    public E testMaximum() {
+
+        if(!(this.input1.compareTo(input2) <= 0) && input1.compareTo(input3) > 0)
             return input1;
         if(input2.compareTo(input3) > 0)
             return input2;
