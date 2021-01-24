@@ -6,11 +6,12 @@ public class TestMaximum <E extends Comparable<E>>{
     E input2;
     E input3;
 
-    public TestMaximum(E input1, E input2, E input3) {
+    @SafeVarargs
+    public TestMaximum(E... input) {
 
-        this.input1 = input1;
-        this.input2 = input2;
-        this.input3 = input3;
+        this.input1 = input[0];
+        this.input2 = input[1];
+        this.input3 = input[2];
     }
 
     public E testMaximum() {
