@@ -39,5 +39,12 @@ public class TestMaximumTest {
         Assert.assertEquals(num2, result);
     }
 
+    @Test
+    public void givenMaxFloatAt_ThirdPosition_shouldReturnSameNumber(){
+        Float num1 = 754.5f, num2 = 344.6f, num3 = 3234.42f;
+        Float result = testMaximum.testMaxFloat(num1, num2, num3);
+        Assert.assertEquals(num3, result);
+    }
+
 }
 
