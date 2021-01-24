@@ -13,6 +13,10 @@ public class TestMaximumTest {
         Assert.assertEquals(34, result.intValue());
     }
 
-
+    @Test
+    public void givenMaxNumberAt_SecondPosition_shouldReturnSameNumber(){
+        Integer result = testMaximum.testMaximum(34, 87, 23);
+        Assert.assertEquals(87, result.intValue());
+    }
 }
 
