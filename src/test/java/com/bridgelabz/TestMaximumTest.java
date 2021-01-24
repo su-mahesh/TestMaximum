@@ -18,5 +18,11 @@ public class TestMaximumTest {
         Integer result = testMaximum.testMaximum(34, 87, 23);
         Assert.assertEquals(87, result.intValue());
     }
+
+    @Test
+    public void givenMaxNumberAt_ThirdPosition_shouldReturnSameNumber(){
+        Integer result = testMaximum.testMaximum(34, 67, 89);
+        Assert.assertEquals(89, result.intValue());
+    }
 }
 
