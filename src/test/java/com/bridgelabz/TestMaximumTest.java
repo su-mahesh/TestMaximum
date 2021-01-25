@@ -71,5 +71,14 @@ public class TestMaximumTest {
         String result = testMaximum.getMaximum();
         Assert.assertEquals("zebra", result);
     }
+
+    @Test
+    public void givenMoreThan3StringParameters_WhenMaxValueAtThirdPosition_shouldReturnMaxString(){
+        TestMaximum<String> testMaximum = new TestMaximum<>("lion", "tiger", "zebra", "goat");
+        String result = testMaximum.getMaximum();
+        Assert.assertEquals("zebra", result);
+    }
+
+
 }
 
