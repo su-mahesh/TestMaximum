@@ -26,7 +26,7 @@ public class TestMaximum <E extends Comparable<E>>{
         System.out.println("Maximum input :"+input);
 
     }
-    public E testMaximum() {
+    public E getMaximum() {
 
         sortInput();
         printMax(input[0]);
